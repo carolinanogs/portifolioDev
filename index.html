@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Dev Fullstack</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav class="nav-links">
+            <a href="#about" class="nav-item">Sobre Mim</a>
+            <a href="#projects" class="nav-item">Projetos</a>
+            <a href="#contact" class="nav-item">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="profile" id="about">
+            <div class="photo-container">
+                <img src="./assets/carol.jpg" alt="" class="profile-img">
+            </div>
+            
+            <h1>Ana Carolina Nogueira Moura <span class="cursor">_</span></h1>
+            <p class="role">// Médica Veterinária & Mestre em Aquicultura | Graduanda em Eng. de Software</p>
+            
+            <div class="stacks">
+                <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                <i class="devicon-python-plain colored" title="Python"></i>
+                <i class="devicon-react-original colored" title="React"></i>
+                <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+                <i class="devicon-flask-original colored" title="Flask"></i>
+                <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+            </div>
+
+            <div class="description">
+                <p>&gt; <strong>System.info:</strong></p>
+                <p>Sou formada em <strong>Medicina Veterinária</strong> com <strong>Mestrado em Aquicultura</strong>. Embora tenha seguido a carreira acadêmica nas biológicas, a computação sempre foi uma paixão latente em minha trajetória.</p>
+                
+                <p>Decidi transformar esse interesse em profissão e hoje estou cursando o 1º período de <strong>Engenharia de Software na FPF Tech</strong> em Manaus. Minha experiência com pesquisa e ciência me deu um olhar analítico apurado e disciplina para resolver problemas complexos.</p>
+                
+                <p>Atualmente, estou mergulhada no aprendizado de tecnologias <strong>Fullstack</strong>, unindo a lógica de backend em Python e Node.js com a interatividade do React. Meu objetivo é construir softwares que impactem positivamente a vida das pessoas e processos corporativos.</p>
+                <p class="blink">_</p>
+            </div>
+
+            <div class="actions" id="contact">
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="btn linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="curriculo.pdf" download class="btn resume">
+                    <i class="fas fa-file-download"></i> Baixar Currículo
+                </a>
+                <a href="carolnogueira2807@gmail.com" class="btn email">
+                    <i class="fas fa-envelope"></i> Contato por E-mail
+                </a>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2>Projetos Recentes</h2>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Todo List App</h3>
+                    <p class="project-techs">HTML5 | CSS3 | JavaScript</p>
+                    <p class="project-description">
+                        Gerenciamento de tarefas com manipulação dinâmica do DOM, permitindo interatividade total na criação e exclusão de itens.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-link"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Calculadora Digital</h3>
+                    <p class="project-techs">HTML5 | CSS3 | JavaScript</p>
+                    <p class="project-description">
+                        Processamento de operações aritméticas básicas com foco em lógica de programação e tratamento de eventos de interface.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-link"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+
+                <div class="project-card coming-soon">
+                    <div class="soon-content">
+                        <i class="fas fa-code-branch soon-icon"></i>
+                        <h3>Em Breve</h3>
+                        <p class="project-techs">React | Node.js | PostgreSQL</p>
+                        <p class="project-description">
+                            Desenvolvendo uma aplicação Fullstack completa para consolidar os estudos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://github.com/carolinanogs" target="_blank" class="btn github-all">
+                <i class="fab fa-github"></i> Ver repositório completo no GitHub
+            </a>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
